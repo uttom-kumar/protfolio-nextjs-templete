@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html{
+    scrollbar-color: #60A5FA #dddddd;
+    scrollbar-width: thin;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+html::-webkit-scrollbar-track-piece  {
+    background-color: #dddddd;
+}
+html::-webkit-scrollbar-thumb:vertical {
+    height: 20px;
+    border-radius: 4px;
+    background:#dddddd;
+}
+body{
+    background-color: #f0f2f5 ;
+}
+.scrollBar{
+    scrollbar-width: thin !important;
 }
